@@ -66,7 +66,7 @@ public class MissionDemolition : MonoBehaviour {
     }
     void UpdateGUI()
     {
-        uitLevel.text = "level: " + (level + 1) + "of" + levelMax;
+        uitLevel.text = "level: "+(level + 1)+"of"+levelMax;
         uitShots.text = "Shots taken: " + shotsTaken;
     }
 	
@@ -87,7 +87,7 @@ public class MissionDemolition : MonoBehaviour {
     void NextLevel()
     {
         level++;
-        if (level == levelMax) ;
+        if (level == levelMax) 
         {
             level = 0;
         }
