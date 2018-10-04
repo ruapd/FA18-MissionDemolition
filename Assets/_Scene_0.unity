@@ -742,6 +742,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1245941798}
+  - component: {fileID: 1245941799}
   m_Layer: 0
   m_Name: CloudAnchor
   m_TagString: Untagged
@@ -762,6 +763,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1245941799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1245941797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 257823764008d4568ae7abb9a7a15f5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numClouds: 40
+  cloudPrefab: {fileID: 1423122964273424, guid: f11a3535bbceb4c15b698050f281808b,
+    type: 2}
+  cloudPosMin: {x: -50, y: -5, z: 10}
+  cloudPosMax: {x: 150, y: 100, z: 10}
+  cloudScaleMin: 1
+  cloudScaleMax: 3
+  cloudSpeedMult: 0.5
 --- !u!1 &1314701590
 GameObject:
   m_ObjectHideFlags: 0
@@ -938,7 +958,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numClouds: 10
-  cloudPrefab: {fileID: 1289228957973438, guid: f11a3535bbceb4c15b698050f281808b,
+  cloudPrefab: {fileID: 1423122964273424, guid: f11a3535bbceb4c15b698050f281808b,
     type: 2}
   cloudPosMin: {x: -50, y: -5, z: 10}
   cloudPosMax: {x: 150, y: 100, z: 10}
@@ -1452,34 +1472,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2024769719
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2024769720}
-  m_Layer: 0
-  m_Name: Cloud
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2024769720
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2024769719}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2100260213
 GameObject:
