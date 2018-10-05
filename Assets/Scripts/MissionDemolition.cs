@@ -17,7 +17,7 @@ public class MissionDemolition : MonoBehaviour {
     [Header("Set in inspector")]
     public Text uitLevel;
     public Text uitShots;
-    public Text uitButtons;
+    public Text uitButton;
     public Vector3 castlePos;
     public GameObject[] castles;
 
@@ -66,7 +66,7 @@ public class MissionDemolition : MonoBehaviour {
     }
     void UpdateGUI()
     {
-        uitLevel.text = "level: "+(level + 1)+"of"+levelMax;
+        uitLevel.text = "level: "+(level + 1)+ " of " +levelMax;
         uitShots.text = "Shots taken: " + shotsTaken;
     }
 	
@@ -98,23 +98,23 @@ public class MissionDemolition : MonoBehaviour {
     {
         if(eView == "")
         {
-            eView = uitButtons.text;
+            eView = uitButton.text;
         }
         showing = eView;
         switch(showing)
         {
             case "Show Slingshot":
                 FollowCam.POI = null;
-                uitButtons.text = "Show Castle";
+                uitButton.text = "Show Castle";
                 break;
 
             case "Show Castle":
                 FollowCam.POI = S.castle;
-                uitButtons.text = "Show Both";
+                uitButton.text = "Show Both";
                 break;
             case "Show Both":
-                FollowCam.POI = GameObject.Find("ViewBoth");
-                uitButtons.text = "Show Slingshot";
+                FollowCam.POI = GameObject.Find("View Both");
+                uitButton.text = "Show Slingshot";
                 break;
         }
     }
